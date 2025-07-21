@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Metro Map</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Metro Route Finder</h1>
+  <div class="controls">
+    <input type="text" id="start" list="stations" placeholder="Start station">
+<input type="text" id="end" list="stations" placeholder="End station">
+
+<datalist id="stations"></datalist>
+
+    <button onclick="findPath()">Find Route</button>
+  </div>
+  <div id="map"></div>
+  <div id="result"></div>
+  <script src="script.js"></script>
+</body>
+</html>
